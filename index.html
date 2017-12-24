@@ -20,8 +20,38 @@
     background-size: cover;  
   }
 	</style>
+ 
+
   </head>
-  <body>
+  <body >
+
+  <p  id="Elsa" style="text-align:center;padding-top:100px"><img alt="Elsa" onclick="myAudioFunction()" src="elsa_frozen_810_500_55_s_c1.jpg"></p>
+
+  <p id="Ola" style="text-align: center; padding-top: 100px;display:none;">
+  <img alt="Ola" src="frozen-olaf.jpg" onclick="hideOlaShowClement()"></p>
+  
+
+  <p id="ClementHouse" style="text-align: center; display: none; padding-top: 100px">
+  <img alt="USAHouse" src="ClementHouse.jpg" style="width:800px"><br/><img alt="Christmas Tree" src="ChristmasTree.jpg"></p>
+  
+
+ <script>
+     var aAudio = new Audio('LetItGo.mp3');
+     function myAudioFunction() {         
+             aAudio.play();
+             var a = document.getElementById("Elsa");
+             a.style.display = "none";
+             var ola = document.getElementById("Ola");
+			ola.style.display = "block";
+     }
+     function hideOlaShowClement() {     	
+             var a = document.getElementById("Ola");
+             a.style.display = "none";
+             var ola = document.getElementById("ClementHouse");
+			ola.style.display = "block";
+
+     }
+ </script>
 
   </body>
 </html>
