@@ -32,7 +32,22 @@
   
 
   <p id="ClementHouse" style="text-align: center; display: none; padding-top: 100px">
-  <img alt="USAHouse" src="ClementHouse.jpg" style="width:800px"><br/><img alt="Christmas Tree" src="ChristmasTree.jpg"></p>
+  <img alt="USAHouse" src="ClementHouse.jpg" style="width:800px" onclick="hideClementHouseShowFrozen()"><br/><img alt="Christmas Tree" src="ChristmasTree.jpg"  onclick="hideClementHouseShowFrozen()"></p>
+  
+  
+
+  <p style="text-align: center; display: none; padding-top: 100px; display: none;" id="frozen">
+  <img alt="AnaInSnow" height="289" src="Ana.png" width="644" onclick="hideFrozenShowWarm()"><br/><img alt="Fozen" src="Fronzen.png" onclick="hideFrozenShowWarm()"></p>
+  
+  
+  
+  
+
+  <p style="text-align: center; display: none; padding-top: 100px; display:none" id="warm">
+  <img alt="warm" src="Warm.jpg"></p>
+  
+  
+  
   
 
  <script>
@@ -51,6 +66,22 @@
 			ola.style.display = "block";
 
      }
+     function hideClementHouseShowFrozen() {     	
+             var a = document.getElementById("ClementHouse");
+             a.style.display = "none";
+             var ola = document.getElementById("frozen");
+			ola.style.display = "block";
+
+     }
+     function hideFrozenShowWarm() {     	
+             var a = document.getElementById("frozen");
+             a.style.display = "none";
+             var ola = document.getElementById("warm");
+			ola.style.display = "block";
+
+     }
+
+
  </script>
 
   </body>
